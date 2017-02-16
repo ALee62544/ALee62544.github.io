@@ -244,6 +244,7 @@
         function checkAnswers() {
             /* hides all the elements so when we check the answers we only
                display the wrong ones */
+		window.scrollTo(0,document.body.scrollHeight);
             hideAnswers();
             $("#category11").css("display", "inherit");
             for(var i = 0; i < correctAnswers.length; i++){
