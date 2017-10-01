@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta charset="UTF-8">
+    <title>All about Compression!</title>
+</head>
+<body>
+
+<nav class = "teal">
+    <div class="nav-wrapper container" role="navigation">
+        <a href="" class="brand-logo">[Computer Science Term] </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#C">Compression</a></li>
+            <li><a href="#L">Lossy</a></li>
+            <li><a href="#LS">Lossless</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class ="container">
+<h3 id ="C">Compression</h3>
+    <div class="divider"></div>
+    <blockquote>
+        <p class="flow-text">"The re-encoding of data (usually the binary data used by computers)
+            into a form that uses fewer bits of information than the original data." - Google Definition</p>
+    </blockquote>
+
+<h4 id ="L">Lossy</h4>
+    <div class="divider"></div>
+    <p class="flow-text">Lossy file compression results in lost data and quality from the original version.
+        Lossy compression is typically associated with image files, such as JPEGs, but can also be used for audio files,
+        like MP3s or AAC files. The "lossyness" of an image file may show up as jagged edges or pixelated areas.
+        In audio files, the lossyness may produce a watery sound or reduce the dynamic range of the audio.</p>
+    <p class="flow-text">Because lossy compression removes data from the original file, the resulting file often takes
+        up much less disk space than the original. For example, a JPEG image may reduce an image's file size by more
+        than 80%, with little noticeable effect. Similarly, a compressed MP3 file may be one tenth the size of the
+        original audio file and may sound almost identical.</p>
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="compressorimage.png">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Uncompressed vs Compressed Image<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://en.wikipedia.org/wiki/Lossy_compression">Source - Wikipedia</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Explanation<i class="material-icons right">close</i></span>
+            <p>You can notice how the uncompressed image (left) retains more pixels than the compressed image (right).
+            This is shown by the noticeable difference in image quality, where the lack of pixels creates a more
+                block-like and rough imagery than an uncompressed image. </p>
+        </div>
+    </div>
+
+<h4 id ="LS">Lossless</h4>
+    <div class="divider"></div>
+    <p class="flow-text">Lossless compression reduces a file's size with no loss of quality. This seemingly magical
+        method of reducing file sizes can be applied to both image and audio files. While JPEGs and MP3s use lossy
+        compression, newer compression algorithms, such as JPEG 2000 and Apple Lossless compression, can be used to
+        create lossless compressed files.</p>
+    <p class="flow-text">Lossless compression basically rewrites the data of the original file in a more efficient way.
+        However, because no quality is lost, the resulting files are typically much larger than image and audio files
+        compressed with lossy compression. For example, a file compressed using lossy compression may be one tenth the
+        size of the original, while lossless compression is unlikely to produce a file smaller than half of the
+        original size.</p>
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="losslessimage.png">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Lossless Algorithm<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://en.wikipedia.org/wiki/Lossless_compression">Source - Wikipedia</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Explanation<i class="material-icons right">close</i></span>
+            <p>Ironically, this image is low-quality because it has been compressed.
+                Regardless, it demonstrates how lossless files are formatted into an algorithm.
+                In this case, the coloured squares could represent a small section of an image which is broken down into a numbered order.
+                (e.g. 3 green squares is represented by 3 and a blue square adjacent is represented by 1, so that the number sequence becomes [3, 1].</p>
+        </div>
+    </div>
+<h4>Information Sources</h4>
+    <div class="divider"></div>
+    <p class="flow-text"><a href="https://techterms.com/definition/lossy">Lossy Compression - Techterms</a></p>
+    <p class="flow-text"><a href="https://techterms.com/definition/lossless">Lossless Compression - Techterms</a></p>
+
+<h5>Author Disclaimer</h5>
+    <p>Content used and displayed here is used for educational purposes only. All rights are reserved to original authors.</p>
+</div>
+
+<footer class="page-footer teal">
+<div class="footer-copyright">
+    <div class="container white-text">
+        Made by Andy Lee
+        <a class="white-text text-lighten-4 right" href="#!">Hey There</a>
+    </div>
+</div>
+</footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+</html>
